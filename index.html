@@ -22,7 +22,7 @@
     <nav class="navbar navbar-expand-md navbar-dark fixed-top">
       <div class="container">
         <a class="navbar-brand" href="#">
-          <img src="img/logo.svg" alt="Logo" width="165" height="25" />
+          <img src="img/logo.svg" alt="Logo" width="165" height="30" />
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -48,20 +48,15 @@
     <!-- Akhir Navbar -->
 
     <!-- Hero Section -->
-    <section class="jumbotron text-white">
-      <div class="container">
-        <div class="row">
-          <div class="col col-md-5 desk-home">
-            <h2 class="display-4 fs-1 animate__animated animate__bounceInDown">RASAKAN KEPUASAN<br /><span> SERVIS KAMI.</span></h2>
-            <p class="lead fs-6 animate__animated animate__bounceInLeft">Bawa motormu ke bengkel kami, niscaya akan kami perbaiki.</p>
-            <button onclick="location.href='#contact'" type="button" class="btn animate__animated animate__bounceInLeft">Contact &nbsp;<i class="bi bi-arrow-right"></i></button>
-          </div>
-          <div class="col-1 col-md-1 bulat animate__animated animate__bounceInRight">
-            <img src="img/circle.svg" alt="Circle" />
-          </div>
-          <div class="col-1 col-md-6 home-img animate__animated animate__bounceInDown">
-            <img src="img/gambar-home.svg" alt="Gambar Home" />
-          </div>
+    <section class="jumbotron container">
+      <div class="row align-items-center">
+        <div class="text col-lg-6 col-md-6 col-12">
+          <h2>RASAKAN KEPUASAN SERVIS KAMI.</h2>
+          <p>Bawa motormu ke bengkel kami, niscaya akan kami perbaiki.</p>
+          <a href="#">Contact &nbsp;<i class="bi bi-arrow-right"></i></a>
+        </div>
+        <div class="img col-lg-6 col-md-6 col-12">
+          <img src="img/gambar-home.svg" class="img-fluid" />
         </div>
       </div>
     </section>
@@ -70,18 +65,18 @@
     <div class="container">
       <!-- Sponsor Start -->
       <div class="row justify-content-center">
-        <div class="col-12 info-sponsor rounded">
+        <div class="col-12 col-lg-12 col-md-12 info-sponsor rounded" style="width: 100%">
           <div class="row img-sponsor">
-            <div class="col-sm">
+            <div class="col-12 col-lg-3 col-md-3">
               <img src="img/sponsor/motul.svg" alt="Motul" />
             </div>
-            <div class="col-sm">
+            <div class="col-12 col-lg-3 col-md-3">
               <img src="img/sponsor/ahm.svg" alt="Ahm" />
             </div>
-            <div class="col-sm">
+            <div class="col-12 col-lg-3 col-md-3">
               <img src="img/sponsor/shell.svg" alt="Shell" />
             </div>
-            <div class="col-sm">
+            <div class="col-12 col-lg-3 col-md-3">
               <img src="img/sponsor/castrol.svg" alt="Castrol" />
             </div>
           </div>
@@ -94,7 +89,7 @@
     <section id="about">
       <div class="container">
         <div class="row text-center text-white mt-5">
-          <div class="col" data-aos="zoom-out" data-aos-duration="1500">
+          <div class="col-lg-12" data-aos="zoom-out" data-aos-duration="1500">
             <h3>About Us</h3>
             <p>
               <span>R&B Custom Looks</span> adalah usaha yang bergerak di bidang perbengkelan.<br />Kami bukan hanya servis kami juga menyelesaikan custom body, modifikasi motor, custom motor, dll.<br />
@@ -107,55 +102,44 @@
     </section>
     <!-- About End -->
 
-    <div class="container">
-      <!-- Abis About Start -->
-      <div class="row next-about rounded">
-        <div class="col-sm-3 col-lg-6" data-aos="fade-right" data-aos-duration="2500">
-          <img src="img/gambar-about.svg" alt="Gambar About" />
+    <!-- Abis About Start -->
+    <section class="next-about container rounded py-5">
+      <div class="row align-items-center">
+        <div class="img col-12 col-lg-6">
+          <img src="img/gambar-about.svg" class="img-fluid" />
         </div>
-        <div class="col-sm-3 col-lg-5 deskripsi" data-aos="fade-left" data-aos-duration="2500">
+        <div class="text col-12 col-lg-6">
           <h2>Kami ahli dalam memperbaiki motor.</h2>
           <p>Ceritakan masalah motormu, kami dengan cepat akan memperbaiki keluhanmu.</p>
-          <button onclick="location.href='#contact'" type="button" class="btn">Contact &nbsp;<i class="bi bi-arrow-right"></i></button>
+          <a href="#">Contact &nbsp;<i class="bi bi-arrow-right"></i></a>
         </div>
       </div>
-      <!-- Abis About End -->
-    </div>
+    </section>
+    <!-- Abis About End -->
 
     <div id="services">
-      <div class="container">
-        <!-- Section Service -->
-        <div class="row text-center">
-          <div class="col-md">
-            <h2>Our Service</h2>
-            <p>Our Amazing Service</p>
+      <!-- Section Service -->
+      <div class="services py-5">
+        <div class="col align-items-center mx-auto my-5">
+          <h2 class="font-weight-bold text-light text-center">Our Services</h2>
+          <p class="text-center">Our Amazing Servics</p>
+        </div>
+        <div class="row container justify-content-center align-items-center text-center mx-auto">
+          <div class="one col-lg-3 col-md-3 col-12 m-2">
+            <img class="img-fluid w-75" src="img/services/motor.svg" />
+            <h5 class="font-weight-bold pt-4 text-light">Custom Motor</h5>
+          </div>
+          <div class="one col-lg-3 col-md-3 col-12 m-2">
+            <img class="img-fluid w-75" src="img/services/repaint.svg" />
+            <h5 class="font-weight-bold pt-4 text-light">Repaint Body</h5>
+          </div>
+          <div class="one col-lg-3 col-md-3 col-12 m-2">
+            <img class="img-fluid w-75" src="img/services/repair.svg" />
+            <h5 class="font-weight-bold pt-4 text-light">Repair</h5>
           </div>
         </div>
-        <div class="row justify-content-center">
-          <div class="col-md-1 kotak-1" data-aos="fade-right" data-aos-duration="1000">
-            <img src="img/services/kotak.svg" alt="Kotak 1" />
-          </div>
-          <div class="col-md-2 custom-motor" data-aos="fade-right" data-aos-duration="1000">
-            <img src="img/services/motor.svg" alt="Custom Motor" />
-            <h6>Custom Motor</h6>
-          </div>
-          <div class="col-md-1 kotak-2" data-aos="flip-up" data-aos-duration="1000">
-            <img src="img/services/kotak.svg" alt="Kotak 2" />
-          </div>
-          <div class="col-md-2 repaint" data-aos="flip-up" data-aos-duration="1000">
-            <img src="img/services/repaint.svg" alt="Repaint Body" />
-            <h6>Repaint Body</h6>
-          </div>
-          <div class="col-md-1 kotak-3" data-aos="fade-left" data-aos-duration="1000">
-            <img src="img/services/kotak.svg" alt="Kotak 3" />
-          </div>
-          <div class="col-md-2 repair" data-aos="fade-left" data-aos-duration="1000">
-            <img src="img/services/repair.svg" alt="Repair" />
-            <h6>Repair</h6>
-          </div>
-        </div>
-        <!-- Section Service -->
       </div>
+      <!-- Section Service -->
     </div>
 
     <section id="contact" class="contact py-5">

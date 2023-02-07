@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap');
 * {
   box-sizing: border-box;
   margin: 0;
@@ -18,45 +18,47 @@ body {
 /* CSS HOME/HEADER */
 .jumbotron {
   background-color: #0f0f0f;
-  margin-top: 14rem;
 }
-
-.jumbotron .desk-home {
-  margin-top: -80px;
+.jumbotron .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: auto;
 }
-
-.jumbotron h2 {
-  font-weight: 800;
-}
-
-.jumbotron span {
+.jumbotron .text h6 {
   color: #ff5a36;
+  font-weight: 800;
+  font-size: 1rem;
+  letter-spacing: 2px;
 }
-
-.jumbotron p {
-  color: #878787;
-}
-
-.jumbotron button {
+.jumbotron .text h2 {
   color: #fff;
-  background-color: #ff5a36;
+  font-weight: 800;
+  font-size: 2.5rem;
+}
+.jumbotron .text p {
+  color: #878787;
+  font-weight: 400;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+}
+.jumbotron .text a {
+  color: #fff;
+  background: #ff5a36;
+  font-weight: 500;
+  padding: 0.4rem 1.2rem;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  text-decoration: none;
 }
 
-.jumbotron button:hover {
+.jumbotron .text a:hover {
   background-color: #d83d1a;
-}
-
-.jumbotron img {
-  width: 606px;
-  margin-top: -250px;
-  margin-left: -65px;
-}
-
-.jumbotron .bulat img {
-  width: 500px !important;
-  margin-top: -150px;
-  margin-left: 185px;
-  z-index: -99999 !important;
+  color: #fff;
 }
 
 /* CSS SPONSORS */
@@ -67,7 +69,7 @@ body {
   padding-bottom: 30px;
 }
 .info-sponsor img {
-  width: 180px;
+  width: 100%;
   height: 80px;
 }
 
@@ -88,49 +90,64 @@ body {
 
 /* CSS ABIS ABOUT US */
 .next-about {
-  background-color: #000000;
+  background: #000000;
   margin-top: 30px;
+  padding: 5px 5px;
 }
-.next-about img {
-  width: 650px;
-  margin-left: -120px;
+.next-about .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: auto;
 }
-
-.next-about h2 {
+.next-about .text h2 {
   color: #fff;
   font-weight: 800;
+  font-size: 2.5rem;
 }
-
-.next-about p {
+.next-about .text p {
   color: #878787;
+  font-weight: 400;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
 }
-
-.next-about button {
+.next-about .text a {
   color: #fff;
-  background-color: #ff5a36;
+  background: #ff5a36;
+  font-weight: 500;
+  padding: 0.4rem 1.2rem;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  text-decoration: none;
 }
-
-.next-about button:hover {
+.next-about .text a:hover {
   background-color: #d83d1a;
   color: #fff;
 }
 
-.next-about .deskripsi {
-  display: inline-block;
-  margin-left: 580px;
-  margin-top: -420px;
-}
-
 /* CSS OUR SERVICES */
 .container h2 {
-  color: #fff;
-  margin-top: 100px;
+  margin-top: 160px;
 }
 
-.kotak img {
-  width: 250px;
+.services .one {
+  background: #393939;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1.5rem 2rem;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
 }
-
 #services .custom-motor img {
   margin-left: -50px;
   margin-top: 50px;
@@ -187,63 +204,4 @@ body {
 
 .footer {
   background-color: #000;
-}
-
-/* MOBILE VERSION */
-@media (max-width: 768px) {
-  .jumbotron .desk-home {
-    margin-top: 50px;
-    z-index: 1;
-  }
-  .jumbotron .home-img img {
-    margin-left: -395px;
-    margin-top: -220px;
-    width: 350px;
-  }
-  .jumbotron .bulat img {
-    margin-left: -275px;
-    margin-top: -160px;
-    width: 290px !important;
-    z-index: -1;
-  }
-
-  .info-sponsor .img-sponsor {
-    margin-left: 30px;
-  }
-
-  .next-about img {
-    width: 400px;
-    margin-left: -100px;
-  }
-  .next-about .deskripsi {
-    margin-left: 10px;
-    margin-top: -60px;
-    margin-bottom: 30px;
-  }
-  #services .kotak-1 {
-    margin-left: 10px;
-  }
-  #services .custom-motor {
-    margin-top: -270px;
-    margin-left: 210px;
-    padding-bottom: 60px;
-  }
-
-  #services .kotak-2 {
-    margin-left: 10px;
-  }
-  #services .repaint {
-    margin-top: -270px;
-    margin-left: 210px;
-    padding-bottom: 60px;
-  }
-
-  #services .kotak-3 {
-    margin-left: 10px;
-  }
-  #services .repair {
-    margin-top: -270px;
-    margin-left: 210px;
-    padding-bottom: 60px;
-  }
 }
